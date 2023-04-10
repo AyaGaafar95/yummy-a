@@ -1,0 +1,104 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="icon" type="image/x-icon" href="logo.png" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container d-flex flex-row">
+      <div class="sideBar-contain d-flex flex-row w-25">
+        <div
+          class="theDark-side w-75 text-white px-4 py-5 d-flex flex-column justify-content-between"
+        >
+          <div class="contain-ul">
+            <ul class="list-unstyled px-2 d-flex flex-column gap-3">
+              <li onclick="searchInputs(); closeSideNav()" class="">
+                <a href="#" class="text-decoration-none text-white">Search</a>
+              </li>
+              <li onclick="getCategories();closeSideNav()" class="">
+                <a href="#" class="text-decoration-none text-white"
+                  >Categories</a
+                >
+              </li>
+              <li onclick="getArea()" class="">
+                <a href="#" class="text-decoration-none text-white">Area</a>
+              </li>
+              <li onclick="getIngredients()" class="">
+                <a href="#" class="text-decoration-none text-white"
+                  >Ingredients</a
+                >
+              </li>
+              <li onclick="contacts()" class="">
+                <a href="#" class="text-decoration-none text-white"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="three-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fas fa-globe"></i>
+            </div>
+            <p>Copyright Â© 2019 All Rights</p>
+            <p>Reserved.</p>
+          </div>
+        </div>
+
+        <div
+          class="theWhite-side w-25 bg-light text-center py-5 d-flex flex-column justify-content-between"
+        >
+          <div class="img w-100">
+            <img class="w-75" src="logo.png" alt="" />
+          </div>
+          <!-- <button class="btn close-bth px-1 py-0"> -->
+          <div id="check">
+            <i
+              class="fas fa-bars text-dark fs-1 open-close-icon fa-align-justify"
+              id="bars"
+            ></i>
+            <!-- <i class="fas fa-times text-dark fs-1"></i> -->
+          </div>
+          <div class="container w-75" id="searchContainer"></div>
+          <!-- </button> -->
+          <div class="icon d-flex flex-column gap-2">
+            <i class="fas fa-globe text-dark"></i>
+            <i class="fas fa-share-alt text-dark"></i>
+          </div>
+        </div>
+      </div>
+      <!-- meals -->
+      <div class="img-contain w-75">
+        <div class="row ps-3" id="myRow"></div>
+      </div>
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+<!-- d-md-none -->
